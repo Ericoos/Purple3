@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../detalhes/cabeçalho.css">
+    <link rel="stylesheet" href="../detalhes/rodape.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main class="area">
+        <div class="background-cards">
+            <section class="dashboard">
+                <h1>Visite nossas Páginas</h1>
+                <div class="cards">
+                    <div class="card">
+                        <img class="imagem" src="../imagens/docs.jpg" alt="Documentação">
+                        <div class="info">
+                            <h3>Documentação</h3>
+                        </div>
+                        <a class="botaoacao" href="../pdf/monografia.pdf">Acessar</a>
+                    </div>
+
+                    <div class="card">
+                        <img class="imagem" src="../imagens/código.jpg" alt="Código Aberto">
+                        <div class="info">
+                            <h3>Código Aberto</h3>
+                        </div>
+                        <a class="botaoacao" href="#">Acessar</a>
+                    </div>
+
+                    <div class="card">
+                        <img class="imagem" src="../imagens/youtube.jpeg" alt="Vídeos Pitch">
+                        <div class="info">
+                            <h3>Vídeos Pitch</h3>
+                        </div>
+                        <a class="botaoacao" href="https://www.youtube.com/watch?v=jh-gIQ_aXGU&list=PLaTLVdxVYjNizsShnDo_infFkcspkLw6R">Acessar</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script>
+        fetch('../detalhes/cabeçalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('../detalhes/rodape.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

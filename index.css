@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(251, 246, 255, 0.5);
+}
+
+.background-cards {
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding-top: 40px;
+  padding-bottom: 85px;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.imagem {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #51005c;
+  border-radius: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+main.area {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.card {
+  justify-self: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #51005c;
+}
+
+.info {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.botaoacao {
+  background-color: #51005c;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.botaoacao:hover {
+  background-color: #9400d3;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #51005c;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #51005c;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
